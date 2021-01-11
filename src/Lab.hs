@@ -14,7 +14,7 @@ import Hatch
 animation t =     offset (-400)   200  (dogwheel t)
               <@> offset (-400) (-200) (gooseChase t)
               <@> offset  400    200   (dogwheel t)
-              <@> offset  0      200   (rotate (-t) cat)
+              <@> offset  0      200   (rotate (-t) dog)
               <@> offset (-300)  0     (text "Welcome to CS141!")
 
 -- A load of dogs spinning around
