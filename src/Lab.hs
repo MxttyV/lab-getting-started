@@ -24,6 +24,6 @@ dogwheel t = superimposeAll [spinningDog x | x <- [t, t + 45 .. t + 315 ] ]
 spinningDog t = rotate t (offset 100 0 dog)
 
 -- The bottom of the screen goose chase
-gooseChase t = offset (t * 2) 0 (duck <|> duck <|> scale -2 goose)
+gooseChase t = offset (t * 2) 0 (duck <|> duck <|> mirror scale 2 goose)
 
 --------------------------------------------------------------------------------
